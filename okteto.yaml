@@ -1,6 +1,5 @@
 version: "3.8"
 services:
-  
   cloudreve:
     container_name: cloudreve
     image: cloudreve/cloudreve:latest
@@ -14,8 +13,7 @@ services:
       - ./cloudreve/cloudreve.db:/cloudreve/cloudreve.db
       - ./cloudreve/avatar:/cloudreve/avatar
     depends_on:
-      - aria2
-  
+      - aria2 
   aria2:
     container_name: aria2
     image: p3terx/aria2-pro # third party image, please keep notice what you are doing
